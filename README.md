@@ -18,7 +18,7 @@ For an image of width $w$, height $h$, with number of pixels given by the area $
 
 This mostly works, and can look like
 
-![img_200_200_200_243_False_False_10](images\img_200_200_200_243_False_False_10.png)
+![img_200_200_200_243_False_False_10](images/img_200_200_200_243_False_False_10.png)
 
 The above image is 200x200 pixels, has 200 samples, and $\Delta=243$. Call this a (200,200,200,243) image where this is (width,height,samples,delta).
 

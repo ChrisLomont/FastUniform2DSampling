@@ -24,7 +24,7 @@ The above image is 200x200 pixels, has 200 samples, and $\Delta=243$. Call this 
 
 But, if you're unlucky with the delta, say a very similar $\Delta=241), it can look bad like 
 
-![img_200_200_200_241_False_False_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_200_241_False_False_10.png)
+![img_200_200_200_241_False_False_10](images/img_200_200_200_241_False_False_10.png)
 
 This (200,200,200,241) image doesn't seem to use spacing as well as the first one.
 
@@ -38,13 +38,13 @@ To start, let's find the smallest "cell" in the samples:
 
 
 
-![img_200_200_200_241_False_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_200_241_False_True_10.png)
+![img_200_200_200_241_False_True_10](images/img_200_200_200_241_False_True_10.png)
 
-![img_200_200_200_243_False_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_200_243_False_True_10.png)
+![img_200_200_200_243_False_True_10](images/img_200_200_200_243_False_True_10.png)
 
 From this we decide we want the ratio of cell edge lengths to be near 1.0. But this too can fail (200,200,115,349). This has cell edge ratio 0.926. So we'll also require the edges to be somewhat close to 90 degrees.
 
-![img_200_200_115_349_False_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_115_349_False_True_10.png)
+![img_200_200_115_349_False_True_10](images/img_200_200_115_349_False_True_10.png)
 
 
 
@@ -56,7 +56,7 @@ So how to compute a basis (and this MUST be a basis in the true mathematical sen
 
 
 
-![img_200_200_200_241_True_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_200_241_True_True_10.png)
+![img_200_200_200_241_True_True_10](images/img_200_200_200_241_True_True_10.png)
 
 ![img_200_200_200_243_True_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_200_243_True_True_10.png)
 
@@ -76,17 +76,17 @@ Applying to the above (200,200,200,_) image yields best delta 221, ratio 1.0, an
 
 
 
-![img_200_200_200_221_True_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_200_221_True_True_10.png)
+![img_200_200_200_221_True_True_10](images/img_200_200_200_221_True_True_10.png)
 
 
 
 Two final examples, for 2048 samples from a 720x1080 image (0.26% of total pixels), this finds delta 391 and image 
 
-![img_720_1080_2048_391_True_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_720_1080_2048_391_True_True_10.png)
+![img_720_1080_2048_391_True_True_10](images/img_720_1080_2048_391_True_True_10.png)
 
 Two final examples, for 2048 samples from a 1080x1920 image (0.10% of total pixels), this finds delta 1049 and image
 
-![img_1080_1920_2048_1049_True_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_1080_1920_2048_1049_True_True_10.png)Finally, C++ code to compute these items.
+![img_1080_1920_2048_1049_True_True_10](images/img_1080_1920_2048_1049_True_True_10.png)Finally, C++ code to compute these items.
 
 ```C++
 //

@@ -22,7 +22,7 @@ This mostly works, and can look like
 
 The above image is 200x200 pixels, has 200 samples, and $\Delta=243$. Call this a (200,200,200,243) image where this is (width,height,samples,delta).
 
-But, if you're unlucky with the delta, say a very similar $\Delta=241), it can look bad like 
+But, if you're unlucky with the delta, say a very similar $\Delta=241$, it can look bad like 
 
 ![img_200_200_200_241_False_False_10](images/img_200_200_200_241_False_False_10.png)
 
@@ -58,7 +58,7 @@ So how to compute a basis (and this MUST be a basis in the true mathematical sen
 
 ![img_200_200_200_241_True_True_10](images/img_200_200_200_241_True_True_10.png)
 
-![img_200_200_200_243_True_True_10](C:\Users\Chris\Desktop\FastUniform2DSampling\images\img_200_200_200_243_True_True_10.png)
+![img_200_200_200_243_True_True_10](images/img_200_200_200_243_True_True_10.png)
 
 
 
